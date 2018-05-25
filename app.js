@@ -59,6 +59,12 @@ TYPER.prototype = {
     window.addEventListener('keypress', this.keyPressed.bind(this))
   },
 
+  end: function () {
+    if ( addFirstLetter === 3) {
+      console.error('Mäng läbi')
+    }
+  },
+
   generateWord: function () {
     const generatedWordLength = this.wordMinLength + parseInt(this.guessedWords / 5)
     const randomIndex = (Math.random() * (this.words[generatedWordLength].length - 1)).toFixed()
@@ -103,6 +109,10 @@ Word.prototype = {
 
   removeFirstLetter: function () {
     this.left = this.left.slice(1)
+  },
+
+  addFirstLetter: function () {
+    this.left = l + this.left
   }
 }
 
