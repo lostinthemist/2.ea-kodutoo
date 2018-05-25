@@ -124,3 +124,15 @@ window.onload = function () {
   const typer = new TYPER()
   window.typer = typer
 }
+
+var currentTime = new Date().getHours();
+if (7 <= currentTime && currentTime < 20) {
+  if (document.body) {
+      document.body.background = "https://wallpapercave.com/wp/CqOvBFE.jpg";
+  }
+}
+else {
+  if (document.body) {
+      document.body.background = "https://img.itch.zone/aW1hZ2UvMTY1MzY0Lzc2MzI0Ny5wbmc=/original/SxIQcb.png";
+  }
+}
