@@ -8,19 +8,41 @@
         margin: 0;
         padding: 0;
       }
-
       html, body, canvas {
         width: 100%;
         height: 100%;
       }
-      
       canvas {
         position: absolute;
+      }
+      body.dark-mode {
+        background-color: #111;
+        color: #eee;
+      }
+      body.dark-mode a {
+        color: #111;
+      }
+      body.dark-mode button {
+        background-color: #eee;
+        color: #111;
+      }
+
+      body.light-mode {
+        background-color: #eee;
+        color: #111;
+      }
+      body.light-mode a {
+        color: #111;
+      }
+      body.light-mode button {
+        background-color: #111;
+        color: #eee;
       }
     </style>
     <script src="app.js"></script>
   </head>
   <body>
+      <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Dark/light mode">Taustavalgus</button>
     <canvas></canvas>
   </body>
 </html>
