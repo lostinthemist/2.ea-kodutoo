@@ -87,7 +87,7 @@ TYPER.prototype = {
 /* WORD */
 const Word = function (word, canvas, ctx) {
   this.word = word
-  this.left = this.word
+  this.left = word
   this.canvas = canvas
   this.ctx = ctx
 }
