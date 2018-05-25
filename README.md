@@ -1,5 +1,9 @@
 # 2. kodutöö – kirjutamise mängu täiendamine
 
+Autor: Rauno Kaldmaa
+
+Skeem: ![Klahvimise skeem](klahvimine_skeem.png "Klahvimise skeem")
+
  * Lisatud öörežiim. Kood laenatud aadressilt: https://codepen.io/HarlemSquirrel/pen/NdMebZ
 
 
