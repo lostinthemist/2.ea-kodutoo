@@ -17,6 +17,8 @@ const TYPER = function () {
 
   this.init()
 }
+var body = document.querySelector("body");
+var currentClass = body.className;
 
 window.TYPER = TYPER
 
@@ -105,6 +107,10 @@ Word.prototype = {
     this.ctx.textAlign = 'center'
     this.ctx.font = '140px Courier'
     this.ctx.fillText(this.left, this.canvas.width / 2, this.canvas.height / 2)
+
+    if (currentClass === "dark-mode") {
+      this.ctx.fillColor = '#fff'
+    }
   },
 
   removeFirstLetter: function () {
@@ -136,7 +142,7 @@ window.onload = function () {
 }
 
 function toggleDarkLight() {
-  var body = document.querySelector("body");
-  var currentClass = body.className;
+  // var body = document.querySelector("body");
+  // var currentClass = body.className;
   body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
 }
