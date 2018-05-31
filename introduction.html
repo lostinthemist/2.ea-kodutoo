@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Typer</title>
+    <style> 
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html, body {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+      .container {
+          width: 75%;
+          margin: auto;
+      }
+      h1 {
+          text-transform: uppercase;
+          padding: 40px 0;
+      }
+      #form-area {
+        padding-top: 5%;
+      }
+      #start-button {
+        padding: 7px 15px;
+        border-radius: 15px;
+        border: none;
+        background-color: #111;
+        color: #fff;
+      }
+      p {
+          padding-top: 25px;
+          font-size: 18px;
+      }
+    </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <form id="form-area">
+            <h1>Klahvimise mäng</h1>
+            <div class="">
+                <input type="text" id="user-name" class="form-control" placeholder="Sisesta nimi" aria-label="Sisesta oma nimi">
+                <a href="index.html">
+                    <button type="button" id="start-button" class="btn" onclick="">Alusta mängu!</button>
+                </a>  
+            </div>
+            <p>
+                Mängu eesmärk on lihtne.<br>
+                Ekraanile kuvatakse sõna, mida tuleb sisse trükkida. <br> Iga sõna kirjutamise järel kuvatakse uus sõna. Sõnad lähevad järjest pikemaks.
+            </p>
+        </form>
+    </div>   
+  </body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>typer</title>
+    <title>Typer</title>
     <style> 
       * {
         margin: 0;
@@ -15,6 +15,17 @@
       canvas {
         position: absolute;
       }
+      #night-light-button {
+        position: fixed;
+        left: 5%;
+        top: 5%;
+        padding: 14px 12px;
+        border-radius: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 1;
+        text-decoration: none;
+      }
       body.dark-mode {
         background-color: #111;
         color: #eee;
@@ -26,13 +37,13 @@
         background-color: #eee;
         color: #111;
       }
-
       body.light-mode {
         background-color: #eee;
         color: #111;
       }
       body.light-mode a {
         color: #111;
+
       }
       body.light-mode button {
         background-color: #111;
@@ -40,9 +51,10 @@
       }
     </style>
     <script src="app.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
   </head>
   <body>
-      <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Dark/light mode">Taustavalgus</button>
+      <button type="button" id="night-light-button" name="dark_light" onclick="toggleDarkLight()" title="Dark/light mode">Taustavalgus</button>
     <canvas></canvas>
   </body>
 </html>
